@@ -210,6 +210,26 @@ public class JFramePrincipal extends javax.swing.JFrame {
                     cadEntrada.setVisible(true);
                 }
                 
+               
+                if (menu.equals(IesbBundle.getBundle("PrincipalCad.jTree.dependentes.text"))) {
+                    CadVisitante cadVisitantes = new CadVisitante();
+                    jDesktopPane1.add(cadVisitantes);
+                    
+                    cadVisitantes.setClosable(true);
+                    cadVisitantes.setMaximum(true);
+                    cadVisitantes.setVisible(true);
+                }  
+                if (menu.equals(IesbBundle.getBundle("PrincipalCad.jTree.reservaEspaco.text"))) {
+                    CadReserva cadReserva = new CadReserva();
+                    jDesktopPane1.add(cadReserva);
+                    
+                    cadReserva.setClosable(true);
+                    cadReserva.setMaximum(true);
+                    cadReserva.setVisible(true);
+                }
+
+
+
                 if (menu.equals(IesbBundle.getBundle("PrincipalCad.jTree.logout.text"))) {
                     int msg = JOptionPane.showOptionDialog(this, IesbBundle.getBundle("generic.fecharSistema.msg"), "Fechar", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
                     if (msg == JOptionPane.YES_OPTION) {
