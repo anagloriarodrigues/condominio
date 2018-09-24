@@ -2,7 +2,7 @@
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
   <Properties>
-    <Property name="title" type="java.lang.String" value="Listar Visitantes"/>
+    <Property name="title" type="java.lang.String" value="Listar Dedendentes"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -37,26 +37,18 @@
         <Component class="javax.swing.JTable" name="jTable1">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="4" rowCount="3">
+              <Table columnCount="4" rowCount="1">
                 <Column editable="true" title="C&#xf3;digo" type="java.lang.Object">
                   <Data value="123"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
                 </Column>
                 <Column editable="true" title="Nome" type="java.lang.Object">
                   <Data value="Anna"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
                 </Column>
                 <Column editable="true" title="Apartamento" type="java.lang.Object">
                   <Data value="101"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
                 </Column>
-                <Column editable="true" title="Data/Hora" type="java.lang.Object">
-                  <Data value="22/09/2018 14h:00min"/>
-                  <Data value="null"/>
-                  <Data value="null"/>
+                <Column editable="true" title="Parentesco" type="java.lang.Object">
+                  <Data value="Filha"/>
                 </Column>
               </Table>
             </Property>

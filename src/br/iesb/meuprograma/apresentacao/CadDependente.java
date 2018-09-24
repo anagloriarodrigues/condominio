@@ -7,14 +7,14 @@ package br.iesb.meuprograma.apresentacao;
 
 /**
  *
- *administrador do autor
+ * @author Francisco
  */
-public class CadVisitante extends javax.swing.JInternalFrame {
+public class CadDependente extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form CadVisitante
      */
-    public CadVisitante() {
+    public CadDependente() {
         initComponents();
     }
 
@@ -36,16 +36,14 @@ public class CadVisitante extends javax.swing.JInternalFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
-        setTitle("Listar Visitantes");
+        setTitle("Listar Dedendentes");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"123", "Anna", "101", "22/09/2018 14h:00min"},
-                {null, null, null, null},
-                {null, null, null, null}
+                {"123", "Anna", "101", "Filha"}
             },
             new String [] {
-                "Código", "Nome", "Apartamento", "Data/Hora"
+                "Código", "Nome", "Apartamento", "Parentesco"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -94,7 +92,7 @@ public class CadVisitante extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        EditVisitante editDependente = new EditVisitante();
+        EditDependente editDependente = new EditDependente();
         
         this.getDesktopPane().add(editDependente);
         editDependente.setVisible(true);

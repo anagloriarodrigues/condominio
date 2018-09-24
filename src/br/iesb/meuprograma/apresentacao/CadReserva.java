@@ -36,6 +36,8 @@ public class CadReserva extends javax.swing.JInternalFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
+        setTitle("Listar Reservas");
+
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"123", "102", "Churrasqueira", "22/09/2018 14h:00min"},

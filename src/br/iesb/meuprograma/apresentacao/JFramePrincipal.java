@@ -209,9 +209,8 @@ public class JFramePrincipal extends javax.swing.JFrame {
                     cadEntrada.setMaximum(true);
                     cadEntrada.setVisible(true);
                 }
-                
-               
-                if (menu.equals(IesbBundle.getBundle("PrincipalCad.jTree.dependentes.text"))) {
+                               
+                if (menu.equals(IesbBundle.getBundle("PrincipalCad.jTree.visitante.text"))) {
                     CadVisitante cadVisitantes = new CadVisitante();
                     jDesktopPane1.add(cadVisitantes);
                     
@@ -227,8 +226,15 @@ public class JFramePrincipal extends javax.swing.JFrame {
                     cadReserva.setMaximum(true);
                     cadReserva.setVisible(true);
                 }
-
-
+               
+                if (menu.equals(IesbBundle.getBundle("PrincipalCad.jTree.dependentes.text"))) {
+                    CadDependente cadVisitantes = new CadDependente();
+                    jDesktopPane1.add(cadVisitantes);
+                    
+                    cadVisitantes.setClosable(true);
+                    cadVisitantes.setMaximum(true);
+                    cadVisitantes.setVisible(true);
+                }
 
                 if (menu.equals(IesbBundle.getBundle("PrincipalCad.jTree.logout.text"))) {
                     int msg = JOptionPane.showOptionDialog(this, IesbBundle.getBundle("generic.fecharSistema.msg"), "Fechar", JOptionPane.YES_NO_OPTION, JOptionPane.INFORMATION_MESSAGE, null, null, null);
